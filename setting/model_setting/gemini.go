@@ -17,8 +17,7 @@ type GeminiSettings struct {
 // 默认配置
 var defaultGeminiSettings = GeminiSettings{
 	SafetySettings: map[string]string{
-		"default":                       "OFF",
-		"HARM_CATEGORY_CIVIC_INTEGRITY": "BLOCK_NONE",
+		"default": "OFF",
 	},
 	VersionSettings: map[string]string{
 		"default":        "v1beta",
@@ -27,6 +26,10 @@ var defaultGeminiSettings = GeminiSettings{
 	SupportedImagineModels: []string{
 		"gemini-2.0-flash-exp-image-generation",
 		"gemini-2.0-flash-exp",
+		"gemini-3-pro-image-preview",
+		"gemini-2.5-flash-image",
+		"nano-banana",
+		"nano-banana-pro",
 	},
 	ThinkingAdapterEnabled:                false,
 	ThinkingAdapterBudgetTokensPercentage: 0.6,
